@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner_container">
+            <h1>BMI Calculator</h1>
+            
+            <!-- Form for user input -->
+            <form id="form">
+                <!-- Input for height in centimeters -->
+                <label for="">Height in CM</label>
+                <input type="number" name="height" placeholder="Enter your height">
+                
+                <!-- Input for weight in kilograms -->
+                <label for="">Weight in KG</label>
+                <input type="number" name="weight" placeholder="Enter your Weight">
+                
+                <!-- Button to submit the form -->
+                <button type="submit" class="btn">Submit</button>
+                
+                <hr style="margin-bottom: 10px;">
+            </form>
+            
+            <!-- Result section to display BMI calculation result -->
+            <div class="result">
+                <h2>Result</h2>
+                <p>Click on Submit button to see results.</p>
+            </div>
+            
+            <!-- Additional content section for BMI weight guide -->
+            <div class="content">
+                <h2>BMI Weight Guide</h2>
+                <p>Underweight &lt; = 18.5 </p>
+                <p>Normal weight = 18.50-24.9</p>
+                <p>Overweight = 25-29.9</p>
+                <p>Obesity = BMI of 30 or greater</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Link to external JavaScript file -->
+<script src="app.js"></script>
+
+</html>

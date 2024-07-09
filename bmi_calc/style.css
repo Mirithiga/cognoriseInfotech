@@ -1,0 +1,105 @@
+/* Apply box-sizing, padding, margin to all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Set background gradient for the entire body */
+body{
+    background: linear-gradient(45deg, #d0d59c, #7c8449);
+}
+
+/* Flex container to center content vertically and horizontally */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* Styling for the main container's heading */
+.container h1{
+    font-weight: 25px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the inner container, which holds the form and result */
+.inner_container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #9b9b9b;
+}
+
+/* Styling for the inner container's heading */
+.inner_container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+}
+
+/* Styling for form labels */
+.inner_container label{
+    display: block;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styling for form input fields */
+.inner_container input{
+    width: 300px;
+    height: 36px;
+    margin: 10px 0;
+    padding-left: 8px;
+}
+
+/* Styling for the form submit button */
+.inner_container .btn{
+    display: block;
+    margin: 10px auto;
+    padding: 11px 35px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    background: linear-gradient(45deg, #217505, #436b03);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styling for the result section heading */
+.inner_container .result h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: poppins, sans-serif;
+}
+
+/* Styling for text in the result section */
+.inner_container .result p{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styling for the additional content section heading */
+.inner_container .content h2{
+    font-weight: 20px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styling for text in the additional content section */
+.inner_container .content p{
+    margin: 5px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
