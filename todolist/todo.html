@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <!-- TITLE -->
+    <header>
+      <h1>Well, Here are the tasks to be done!</h1>
+    </header>
+    <!-- INPUT FIELD TO ENTER THE TASKS AND DROPDOWN FILTER -->
+    <form>
+      <input type="text" placeholder="Enter The Task" class="todo_input"/>
+      <button class="todo_button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter_todo" style="font-size: medium; ">
+          <option value="all" style="font-size: medium;">All</option>
+          <option value="completed" style="font-size: medium;">Completed tasks</option>
+          <option value="uncompleted" style="font-size: medium;">Uncompleted tasks</option>
+        </select>
+      </div>
+    </form>
+    <!-- CONTAINER FOR DISPLAYING TO-DO LIST BY ADDING TASKS DYNAMICALLY USING JAVASCRIPT -->
+    <div class="todo_container">
+      <ul class="todo_list"></ul>
+    </div>
+    <!-- ADDING JAVA SCRIPT -->
+    <script src="./app.js"></script>
+  </body>
+</html>
